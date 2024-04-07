@@ -1,0 +1,365 @@
+/* Темный оливковый - #1F2605
+Глубокий лесной - #1F6521
+Яркий оттенок зеленого - #53900F
+Оливковый - #A4A71E
+Теплый желтый цвет с оттенком зеленого - #D6CE15 
+<header>
+            <a class="logo" href="#"><img src="/IMAGE/icon2.png" height="90px" width="90px"></a>
+            <h1>BEGINNER  <br> путешественник</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about me.html">Обо мне</a></li>
+                    <li><a href="advice.html">Советы</a></li>
+                    <li><a href="album.html">Альбом</a></li>
+                </ul>
+            </nav>
+    </header>*/
+
+*{
+    margin: 0 auto;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+.main_image{
+    background-image: url(/IMAGE/ash.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+}
+#container{
+    max-width: 1300px;
+	margin: 30px auto;
+    text-align: center;
+}
+header{
+    display: flex;
+    position: relative;
+    background-color: #1f6521;
+    align-items: center;
+    margin-bottom: 15px;
+    transition: 0.15s ease-in-out;
+    
+}
+header h2{
+    margin-left: 20px;
+    color: aliceblue;
+    font-weight: bold;
+    line-height: 1;
+    padding-top: 20px;
+    
+}
+header nav a:hover{
+    border: solid 1px #1F2605;
+    background-color: #D6CE15;
+    color:black;
+    border-radius: 20px;
+    padding: 8px 30px;
+    
+}
+
+
+.open-menu, .close-menu{
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    font-size: 1.3rem;
+    display: none;
+}
+.open-menu{
+    top: 5%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu{
+    top: 20px;
+    right: 20px;
+}
+.my-logo{
+    display: flex;
+}
+#check {display: none;}
+.logo{
+    width: 100%; 
+    height: auto;
+}
+a{
+    text-decoration: none;
+    color:  #fff;
+}
+nav{
+    
+    border-radius: 20px;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  
+}
+nav li {
+    display: inline-block; 
+    font-weight: bold;
+    font-size: 14pt;
+    margin: 30px 30px;
+}
+iframe{
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.main_image{
+    text-align: center;
+    margin-top: -20px;
+    overflow: hidden;
+}
+.main_image img{
+    width:100%;
+  object-fit: cover;
+}
+.content{
+    background: #ffffff; 
+    box-shadow: rgba(49, 47, 47, 0.5) 3px 4px 9px;
+    margin-bottom: 35px;
+    overflow: hidden;
+    text-align: center;
+    width: 70%;
+    float: left;
+}
+
+
+.content  h3{
+    margin-bottom: 10px ;
+    font-weight: 600;
+    font-size: 14pt;
+    color: #D6CE15;
+}
+.content img{
+    max-width: 100%; 
+    height: auto;
+    object-fit: cover; 
+}
+.content p{
+    margin-bottom: 20px;
+    text-align: justify;
+    max-width: 100%; 
+    height: auto;
+    padding: 0 25px;
+
+}
+
+
+.sidebar{
+    background: #ffffff;
+    float: right;
+    width: 22%;
+    height: 280px;
+    padding: 15px 7px;
+    box-shadow: rgba(49, 47, 47, 0.5) 3px 4px 9px;
+    text-align: center;
+    top: 0;
+    overflow: hidden;
+    margin-left: 45px;
+}
+.sidebar img{
+    max-width: auto;
+    object-fit: cover; 
+}
+.mu_photo img{
+    border-radius: 100%;
+}
+.sidebar p{
+    font-size: 11pt;
+    padding-top: 15px;
+}
+.sidebar h3{
+    padding-bottom: 15px;
+}
+menu{
+    text-align: center;
+}
+
+/* Альбом */
+.album-text{
+    margin: 20px auto;
+    width: 450px;
+    text-align: center;
+    color: #D6CE15;
+}
+
+.gallery img {
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+    -webkit-filter: blur(2px);
+    filter: blur(3px);
+    transition-duration: 1s;
+}
+
+.gallery img:hover {
+    border: 5px #fff;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-filter: none;
+    filter: none;
+    z-index: 1;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
+}
+.gallery h2{
+    margin: 20px auto;
+    width: 450px;
+    text-align: center;
+    color: #A4A71E;
+}
+/* Обо мне*/
+.content-about-me{
+    background: #ffffff;
+    max-width: 70%; 
+    height: auto;
+    box-shadow: rgba(49, 47, 47, 0.5) 3px 4px 9px;
+    display: grid;
+    grid-template-columns: 40% 45%;
+    padding: 90px 10px;
+    text-align: justify;
+    overflow: hidden;
+    margin-bottom: 11em;
+}
+
+.my-photo img{
+  border-radius: 100%;
+  margin-left: 20px;
+  text-align: center;
+  max-width: 90%; 
+
+  object-fit: cover;
+  
+}
+.my-biography{
+    margin-top: 25px;
+    width: 100%;
+    overflow: hidden ;
+
+}
+.my-biography h2{
+    margin-bottom: 15px;
+}
+.my-biography a{
+    color: blue;
+}
+
+.about-me{
+    max-width: 100%; 
+    height: auto;
+    text-align: justify;
+    margin-bottom: 10px;
+    align-items: center;
+}
+/* Советы*/
+.advice{
+    max-width: 1300px;
+    text-align: center;
+    
+}
+.napp{
+    padding: 10px 34px
+}
+.advice h3, h2{
+    color: #D6CE15;
+    margin-bottom: 20px;
+    height: auto;
+    object-fit: cover;
+}
+.advice p{
+    margin-bottom: 15px;
+}
+.block-advice{
+    margin-bottom: 40px;
+    background: #ffffff;
+    box-shadow: rgba(49, 47, 47, 0.5) 3px 4px 9px;
+    text-align: justify;
+    padding: 15px 15px;
+    max-width: 80%; 
+    height: auto;
+    object-fit: cover;
+}
+footer{
+    float: inline-end;
+    background-color: #1F2605;
+    width: 100%;
+    position: relative;
+    height: 200px;
+}
+.column  {
+    text-align: center;
+   padding-top: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1600px){
+    .sidebar{
+        float: none;
+        margin-bottom: 10px;
+        width: 30%;
+    }
+    .content{
+        width: 95%;
+    }
+    .my-biography{
+        max-width: 100%; 
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+@media(max-width: 1000px){
+    .content-about-me{
+       display: block;
+       padding: 30px 50px;
+       text-align: center;
+    }
+    .content-about-me p{
+        text-align: justify;
+    }
+}
+
+@media(max-width: 880px){
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        height: 40%;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color:  #1f6521;
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li {margin-top: 40px;}
+    .menu li a {padding: 10px;}
+    .open-menu{margin-top: 40px}
+    .open-menu , .close-menu {display: block;}
+    #check:checked ~ .menu {right: 0;}
+    .my-photo{
+        align-self: start;
+    }
+}
+
+
